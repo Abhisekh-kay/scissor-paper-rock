@@ -61,12 +61,13 @@ function game(){
         console.log(computerSelection);
         playRound(playerSelection, computerSelection);
     }
-    if (UserScore ==5 || ComputerScore!= 5){
+    if (UserScore > ComputerScore){
         console.log("You won");
-        console.log(UserScore);
+        console.log(UserScore + " wins for you");
     }
-    else if (ComputerScore==5 || UserScore!=5){
+    else if (ComputerScore> UserScore){
        console.log("Computer won");
+       console.log(ComputerScore + " wins for computer");
     }
     else{
         console.log("No one won");
